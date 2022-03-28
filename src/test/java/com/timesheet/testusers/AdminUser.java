@@ -6,7 +6,7 @@ import com.timesheet.DAO.AdminUserDAO;
 import com.timesheet.DAO.UpdateUserDAO;
 
 public class AdminUser {
-    public static void adminUser() throws Exception {
+    public static void adminUser(String newUserId, String userId) throws Exception {
         try (Scanner sc = new Scanner(System.in)) {
         String useremail1 = sc.nextLine();
         String userpassword1 = sc.nextLine();
@@ -31,7 +31,7 @@ public class AdminUser {
                     int choose = mb.nextInt();
                     switch(choose){
                         case 1:
-                        UpdateUserDAO.updateUserId(newUserId, userId);
+                        UpdateUserDAO.updateUserName(newUserId, userId);
                     }
 
                 }

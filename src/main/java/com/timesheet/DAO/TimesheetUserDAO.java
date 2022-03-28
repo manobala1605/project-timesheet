@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import com.timesheet.Logic.TimesheetUser;
-import com.timesheet.Model.Menu;
+import com.timesheet.Logic.Menu;
+import com.timesheet.Model.TimesheetUser;
 
 public class TimesheetUserDAO {
     

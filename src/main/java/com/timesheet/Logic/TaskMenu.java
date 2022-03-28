@@ -4,27 +4,27 @@ import java.util.Scanner;
 
 import com.timesheet.DAO.TimesheetTaskDAO;
 
-public class Menu {
-    public static void showMenu() throws Exception{
+public class TaskMenu {
+    public static void showTaskMenu() throws Exception{
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("1. Insert project");
-            System.out.println("2. Delete project");
-            System.out.println("3. Update project");
-            System.out.println("4. Display project");
+            System.out.println("1. Insert Task");
+            System.out.println("2. Delete Task");
+            System.out.println("3. Update Task");
+            System.out.println("4. Display Task");
 
             int choice=sc.nextInt();
             switch(choice){
                 case 1:
                     //Insert
-                     InsertProject.insertproject();
+                    InsertTask.insertTask();
                     break;
                 case 2:
                     //Delete
-                    DeleteProject.deleteproject();
+                    DeleteTask.deleteTask();
                     break;
                 case 3:
                     //Update
-                   UpdateProject.updateproject();
+                   UpdateTask.updateTask();
                     break;
                    
                 case 4:
