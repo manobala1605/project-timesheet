@@ -1,6 +1,5 @@
-package com.timesheet.Logic;
+package com.timesheet.DAO;
 
-import com.timesheet.DAO.TimesheetTaskDAO;
 import com.timesheet.Model.TimesheetTasks;
 
 public class DeleteTaskDAO {

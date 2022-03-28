@@ -9,6 +9,7 @@ public class TimesheetTasks {
     public String taskDeadline;
     public long taskNo1;
     public String newTask;
+    public Long taskNo2;
 
     public TimesheetTasks(Long taskNo,String projectCode,String taskAssigned,String taskStatus,String duration,String taskDeadline){
         this.taskNo = taskNo;
@@ -20,9 +21,12 @@ public class TimesheetTasks {
     }
 
     public TimesheetTasks(long taskNo1) {
+        this.taskNo1=taskNo1;
     }
 
-    public TimesheetTasks(Long taskNo2, String newTask2) {
+    public TimesheetTasks(Long taskNo2, String newTask) {
+        this.taskNo2=taskNo2;
+
     }
 
 }

@@ -17,10 +17,10 @@ public class AdminUserDAO {
            System.err.println(connection);
            Statement mystatement = connection.createStatement();
    
-            ResultSet query=mystatement.executeQuery("select * from timesheet_app_users;");
+            ResultSet query=mystatement.executeQuery("SELECT * FROM user_detail;");
             while(query.next())
             {
-                System.err.println(query.getString("user_id")+"  --->  "+query.getString("name")+"  ----->   "+query.getString("email_id")+"  ----->   "+query.getString("password")+"  ------->   "+query.getString("project"));  
+                System.err.println(query.getString("user_id")+"  --->  "+query.getString("name")+"  ----->   "+query.getString("email_id")+"  ----->   "+query.getString("project_code")+"  ------->   "+query.getString("project_name")+"  --->  "+query.getString("project_created")+"  ----->   "+query.getString("status")+"  ----->   "+query.getString("total_tasks")+"  ----->   "+query.getString("tasks_completed")+"  ----->   "+query.getString("deadline"));  
              
             }
          

@@ -2,8 +2,6 @@ package com.timesheet.Logic;
 
 import java.util.Scanner;
 
-import com.timesheet.DAO.TimesheetTaskDAO;
-
 public class TaskMenu {
     public static void showTaskMenu() throws Exception{
         try (Scanner sc = new Scanner(System.in)) {
@@ -29,7 +27,12 @@ public class TaskMenu {
                    
                 case 4:
                     // display
-                    TimesheetTaskDAO.displayProject();
+                    DisplayTask.displayTask();
+                    break;
+                
+                case 5:
+                    //search
+                    SearchTask.SearchTasks();
                     break;
                 
                 default:
